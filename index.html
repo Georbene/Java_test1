@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grading system2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backimg"></div>
+    <div class="shift">
+      <p class="enter">Enter your score</p>
+      <input type="number" placeholder="Input your score.value" id="score" />
+      <button class="btnt" onclick="chechscore()">Check Score</button>
+      <p class="here" id="showResult">Result will show here</p>
+    </div>
+    <script>
+      var song = new Audio("You-are-a-Mumu-Man.mp3");
+      var songe = new Audio("foto.mp3");
+      var songd = new Audio("Funny-noise-Sound-effect.mp3");
+      var songc = new Audio("Dun-Dun-Dunnn.mp3");
+      var songb = new Audio("make-god-no-allow-dem.mp3");
+      var songa = new Audio("clap.wav");
+      var songin = new Audio("70-years-old-man.mp3");
+      console.log(showResult.innerHTML);
+      function chechscore() {
+        console.log(score.value);
+        if (score.value >= 0 && score.value < 40) {
+          console.log("F");
+          showResult.innerHTML = "F";
+          song.play();
+        } else if (score.value >= 40 && score.value < 50) {
+          console.log("E");
+          showResult.innerHTML = "E";
+          songe.play();
+        } else if (score.value >= 50 && score.value < 60) {
+          console.log("D");
+          showResult.innerHTML = "D";
+          songd.play();
+        } else if (score.value >= 60 && score.value < 70) {
+          console.log("C");
+          showResult.innerHTML = "C";
+          songc.play();
+        } else if (score.value >= 70 && score.value < 80) {
+          console.log("B");
+          showResult.innerHTML = "B";
+          songb.play();
+        } else if (score.value >= 80 && score.value <= 100) {
+          console.log("A");
+          showResult.innerHTML = "A";
+          songea.play();
+        } else {
+          console.log("invalid");
+          showResult.innerHTML = "invalid";
+          songin.play();
+        }
+      }
+    </script>
+  </body>
+</html>

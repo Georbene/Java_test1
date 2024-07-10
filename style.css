@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.backimg {
+  background-image: url(images/Kris_Peterson_Back_to_The_Future.png);
+  height: 640px;
+}
+.shift {
+  text-align: center;
+  margin-top: -500px;
+  margin-left: 450px;
+  background-color: aliceblue;
+  width: 500px;
+  height:300px;
+}
+.enter {
+  font-size: 50px;
+  padding: 20px;
+}
+input {
+  padding-left: 10px;
+  height: 60px;
+  width: 200px;
+}
+.btnt {
+  height: 40px;
+font-weight: 800;
+background-color: rgb(147, 190, 228);
+  padding: 10px;
+}
+.here{
+    margin-top: 20px;
+    font-size: 35px;
+}

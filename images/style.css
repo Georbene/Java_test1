@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.backimg{
+    background-image: url(/Kris_Peterson_Back_to_The_Future.png);
+    height: 200px;
+}
