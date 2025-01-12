@@ -35,16 +35,7 @@ animation: move 5s ease ;
   height: 1000px;
  }
 }
-@keyframes moves{
-from{
-  background-color: aliceblue
-  border-radius: 10px; 
-}
-to{
-  background-color: rgb(123, 153, 180);
-  border-radius: 10px;
-}
-}
+
 .shift {
   text-align: center;
   margin: auto auto;
