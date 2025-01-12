@@ -3,18 +3,61 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  overflow: hidden;
+}
 .backimg {
-  background-image: url(images/Kris_Peterson_Back_to_The_Future.png);
-  height: 640px;
+    background-image: url(images/whascore.PNG);
+    /* background-image: url(images/Kris_Peterson_Back_to_The_Future.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  height: 100vh;
+  width: 100%;
+animation: move 5s ease ;
+}
+@keyframes move {
+  0%{
+  background-image: url(images/Kris_Peterson_Back_to_The_Future.png);   
+  }
+  50%{
+    background-image: url(images/whascore.PNG);
+  }
+  100%{
+    background-image: url(images/Kris_Peterson_Back_to_The_Future.png);   
+  }
+} 
+@media screen and (max-width: 900px) {
+ .shift{
+  width: 100px;
+ }
+ .backimg{
+  height: 1000px;
+ }
+}
+@keyframes moves{
+from{
+  background-color: aliceblue
+  border-radius: 10px; 
+}
+to{
+  background-color: rgb(123, 153, 180);
+  border-radius: 10px;
+}
 }
 .shift {
   text-align: center;
-  margin-top: -500px;
-  margin-left: 450px;
+  margin: auto auto;
+  /* margin-top: -500px;
+  margin-left: 450px; */
   background-color: aliceblue;
-  width: 500px;
+  border-radius: 10px;
+  width: 450px;
   height:300px;
+  animation: moves 5s ease 
 }
+
+
 .enter {
   font-size: 50px;
   padding: 20px;
